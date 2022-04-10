@@ -1,0 +1,135 @@
+/*---------------------
+  Шапка
+-----------------------*/
+
+.hero-items .owl-item.active .single-hero-item .hero-text h2,
+.hero-items .owl-item.active .single-hero-item .hero-text h1,
+.hero-items .owl-item.active .single-hero-item .hero-text .primary-btn {
+	top: 0;
+	opacity: 1;
+}
+
+.hero-items .owl-item.active .single-hero-item .hero-text h2 {
+	-webkit-transition: all 0.2s ease 0.2s;
+	-o-transition: all 0.2s ease 0.2s;
+	transition: all 0.2s ease 0.2s;
+}
+
+.hero-items .owl-item.active .single-hero-item .hero-text h1 {
+	-webkit-transition: all 0.4s ease 0.4s;
+	-o-transition: all 0.4s ease 0.4s;
+	transition: all 0.4s ease 0.4s;
+}
+
+.hero-items .owl-item.active .single-hero-item .hero-text .primary-btn {
+	-webkit-transition: all 0.6s ease 0.6s;
+	-o-transition: all 0.6s ease 0.6s;
+	transition: all 0.6s ease 0.6s;
+}
+
+.hero-items .owl-nav button[type=button] {
+	position: absolute;
+	left: 75px;
+	top: 50%;
+	-webkit-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+	line-height: 30px;
+	font-size: 60px;
+	color: #000000;
+}
+
+.hero-items .owl-nav button[type=button].owl-next {
+	left: auto;
+	right: 75px;
+}
+
+.hero-items .owl-dots {
+	position: absolute;
+	left: 0;
+	bottom: 23px;
+	width: 100%;
+	text-align: center;
+}
+
+.hero-items .owl-dots button.owl-dot {
+	height: 14px;
+	width: 14px;
+	background: #000000;
+	border-radius: 50%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.hero-items .owl-dots button.owl-dot.active:after {
+	opacity: 1;
+}
+
+.hero-items .owl-dots button.owl-dot:after {
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #000000;
+	content: "";
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.hero-items .owl-dots button.owl-dot:last-child {
+	margin-right: 0;
+}
+
+.single-hero-item {
+	height: 950px;
+	padding-top: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.single-hero-item .hero-text {
+	text-align: center;
+}
+
+.single-hero-item .hero-text h2 {
+	color: #000000;
+	text-transform: uppercase;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 60px;
+	margin-bottom: 4px;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.single-hero-item .hero-text h1 {
+	color: #000000;
+	font-size: 90px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 46px;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.single-hero-item .hero-text .primary-btn {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.single-hero-item .hero-text .primary-btn:hover:after {
+	opacity: 1;
+}
